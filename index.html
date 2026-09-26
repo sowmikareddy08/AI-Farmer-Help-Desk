@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Farmer Help Desk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🌾 AI Farmer Help Desk</h1>
+  <p>Empowering Indian Farmers with AI</p>
+
+  <!-- Image Upload -->
+  <input type="file" id="cropImage">
+  <button onclick="detectDisease()">Detect Disease</button>
+
+  <!-- Result -->
+  <div id="result"></div>
+
+  <hr>
+
+  <!-- Chatbot -->
+  <h2>💬 Farmer AI Chatbot</h2>
+  <input type="text" id="question" placeholder="Ask something...">
+  <button onclick="chatbot()">Ask</button>
+  <div id="chatResponse"></div>
+
+  <hr>
+
+  <!-- Language -->
+  <h2>🌐 Language Support</h2>
+  <select>
+    <option>English</option>
+    <option>Telugu</option>
+    <option>Hindi</option>
+  </select>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
